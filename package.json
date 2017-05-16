@@ -1,10 +1,12 @@
 {
   "name": "coffee-chai",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha  --bail --timeout 30000 --require coffee-script/register --compilers coffee:coffee-script/register specs/unit/helper.js specs/unit/*.coffee",
+    "test-debug": "mocha --debug-brk --bail --timeout 30000 --require coffee-script/register --compilers coffee:coffee-script/register specs/unit/helper.js specs/unit/*.coffee"
   },
   "repository": {
     "type": "git",
