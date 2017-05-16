@@ -6,7 +6,9 @@
   "main": "",
   "scripts": {
     "test": "mocha  --bail --timeout 30000 --require coffee-script/register --compilers coffee:coffee-script/register specs/**/*.coffee",
-    "test-debug": "mocha --debug-brk --bail --timeout 30000 --require coffee-script/register --compilers coffee:coffee-script/register specs/**/*.coffee"
+    "test-debug": "mocha --debug-brk --bail --timeout 30000 --require coffee-script/register --compilers coffee:coffee-script/register specs/**/*.coffee",
+    "lint": "eslint src --ext js --ext jsx",
+    "lint-debug": "eslint --debug src --ext js --ext jsx"
   },
   "repository": {
     "type": "git",
