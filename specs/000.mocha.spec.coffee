@@ -24,7 +24,7 @@ describe 'Coffeescript Tests', ->
     ]
 
   describe 'addition', ->
-    it 'is not null', -> expect(addition).to.not.be.null
+    it 'is not undefined', -> expect(addition).to.not.be.undefined
     it 'is a function', -> expect(addition).to.be.a.function
     
     expectOutput = (testItem, index) ->

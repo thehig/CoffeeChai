@@ -4,5 +4,6 @@ beforeEach(function(){
   expect = require('chai').expect;
   l = console.log
   j = JSON.stringify
+  nope = expect.fail
 });
 /* eslint-enable */
